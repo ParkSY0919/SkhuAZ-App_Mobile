@@ -71,17 +71,9 @@
 > 
 > Branch : csw
 
-**😆봉주헌**
-
-> Position : MOBILE
-> 
-> Git : [https://github.com/Bongjooheon](https://github.com/Bongjooheon)
-> 
-> Branch : bjh
-
 **😉허지영**
 
-> Position : BACK | 백엔드 귀요미
+> Position : BACK
 > 
 > Git : [https://github.com/jiyoungmerong](https://github.com/jiyoungmerong)
 >
@@ -104,13 +96,3 @@
 > Git : [https://github.com/ParkSY0919](https://github.com/ParkSY0919)
 > 
 > Branch : psy
-
-# DESIGN
-
-**🙃윤다혜**
-
-> Position : DESIGN | 노션관리 | README관리
-> 
-> Git : [https://github.com/Rahdduru](https://github.com/Rahdduru)
-> 
-> Branch : X
