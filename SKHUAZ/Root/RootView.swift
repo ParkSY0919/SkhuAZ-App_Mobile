@@ -28,12 +28,17 @@ struct MyStruct: Codable {
 struct RootView: View {
     @State private var myStruct: MyStruct? = nil
     @State private var isShowingDetail = false // MyStructDetail View를 표시할지 여부를 관리하는 상태 변수
-    @StateObject private var viewModel = ContentViewModel()
     @State private var titles = [String]()
     @State private var routeInfos = [String]()
+    @State private var searchText: String = ""
+    
     @State var searchinput: String = ""// @State 속성을 이용하여 데이터를 저장
-    @EnvironmentObject var userData: UserData
     @State var shouldRefresh = false
+    
+    @StateObject private var viewModel = ContentViewModel()
+    
+    @EnvironmentObject var userData: UserData
+    
 
 
     private func DetailData(id: Int) {
@@ -96,17 +101,60 @@ struct RootView: View {
                 }
             }
             /**전공 선택 파트**/
-            HStack {
-                Major_Box()
-                    .frame(width: 312, height: 29)
-                    .padding(.leading, -6)
-                    .padding(.bottom, 10)
-                Spacer()
-                NavigationLink(destination: Root_Write_noG()) {
-                    Image("글쓰기 버튼")
-                        .frame(width: 36, height: 29)
-                        .padding(.trailing, 23)
-                }
+            HStack{
+                Text("")
+                    .frame(width:10)
+                ScrollView (.horizontal, showsIndicators: false, content:  {
+                    HStack {
+                        Button {
+                            searchinput = "소프트웨어공학"
+                        } label: {
+                            RoundedRectangle(cornerRadius: 10)
+                                .stroke(Color(hex: 0x9AC1D1), lineWidth: 2)
+                                .frame(width:145,height:35)
+                            
+                                .overlay(
+                                    Text("소프트웨어공학과")
+                                )
+                        }
+                        Button {
+                            searchinput = "정보통신공학"
+                        } label: {
+                            RoundedRectangle(cornerRadius: 10)
+                                .stroke(Color(hex: 0x9AC1D1), lineWidth: 2)
+                                .frame(width:145,height:35)
+                            
+                                .overlay(
+                                    Text("정보통신공학과")
+                                )
+                        }
+                        Button {
+                            searchinput = "컴퓨터공학"
+                        } label: {
+                            RoundedRectangle(cornerRadius: 10)
+                                .stroke(Color(hex: 0x9AC1D1), lineWidth: 2)
+                                .frame(width:145,height:35)
+                            
+                                .overlay(
+                                    Text("컴퓨터공학과")
+                                )
+                        }
+                        Button {
+                            searchinput = "인공지능공학"
+                        } label: {
+                            RoundedRectangle(cornerRadius: 10)
+                                .stroke(Color(hex: 0x9AC1D1), lineWidth: 2)
+                                .frame(width:145,height:35)
+                            
+                                .overlay(
+                                    Text("인공지능공학과")
+                                )
+                        }
+                    }.padding()
+                })
+                
+                Root_WriteButton()
+                
             }
 
             NavigationView {
@@ -115,7 +163,7 @@ struct RootView: View {
                         Text("")
                             .frame(height:6)
                         ForEach(viewModel.posts.filter {
-                            searchinput.isEmpty ? true : ($0.title?.contains(searchinput) ?? false)
+                            searchinput.isEmpty ? true : ($0.title?.contains(searchinput) ?? false) || ($0.department.contains(searchinput))
                         }, id: \.id) { post in
                             Button(action: {
                                 DetailData(id: post.id)

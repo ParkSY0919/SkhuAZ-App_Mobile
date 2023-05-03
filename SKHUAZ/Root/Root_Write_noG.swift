@@ -18,6 +18,7 @@ struct Root_Write_noG: View {
     @State var isSaveButtonEnabled: Bool = true
     @State var department: String = "전공을 선택해주세요"
     @State var rootText: String = "최근 진행한 선수과목제도가 표시됩니다."
+    @State private var skip: Bool = false
     @Environment(\.presentationMode) var presentationMode
 
     @EnvironmentObject var userData: UserData
@@ -141,17 +142,30 @@ struct Root_Write_noG: View {
             })
 
             
+//            //취소 버튼
+//            Button(action: {
+//                 print("취소버튼 클릭")
+//                skip = true
+//                })
+//            {
+//                Rectangle().fill(Color(hex: 0xEFEFEF))
+//                    .frame(width: 350, height: 40)
+//                    .cornerRadius(10)
+//                    .overlay(content: {
+//                        HStack {
+//                            Text("목록으로")
+//                                .foregroundColor(Color.black)
+//                                .font(.system(size: 15))
+//                        }
+//                    })
+//            }
+//            .background(
+//                NavigationLink(destination: RootView(), isActive: $skip) {
+//                    
+//                    EmptyView()
+//                }
+//            )
             
-            Rectangle().fill(Color(hex: 0xEFEFEF))
-                .frame(width: 350, height: 40)
-                .cornerRadius(10)
-                .overlay(content: {
-                    HStack {
-                        Text("목록으로")
-                            .foregroundColor(Color.black)
-                            .font(.system(size: 15))
-                    }
-                })
             Spacer()
         }
     }

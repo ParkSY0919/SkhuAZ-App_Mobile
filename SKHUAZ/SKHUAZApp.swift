@@ -14,8 +14,6 @@ struct SKHUAZApp: App {
             ContentView()
                 .environmentObject(PostData())
                 .environmentObject(UserData())
-                
-//            test()
         }
     }
 }

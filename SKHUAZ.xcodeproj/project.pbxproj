@@ -56,6 +56,7 @@
 		9EC93A2929E8179B0026A3C0 /* Root_Mo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC93A2829E8179B0026A3C0 /* Root_Mo.swift */; };
 		9EC93A2B29E84A2C0026A3C0 /* re_post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC93A2A29E84A2C0026A3C0 /* re_post.swift */; };
 		9EC93A2D29E84A460026A3C0 /* re_save.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC93A2C29E84A460026A3C0 /* re_save.swift */; };
+		9EC986E52A021F71002BFE96 /* Root_WriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC986E42A021F71002BFE96 /* Root_WriteButton.swift */; };
 		9EDB447429E1597900001AB0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9EDB447329E1597900001AB0 /* Alamofire */; };
 		9EDB447729E1636700001AB0 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 9EDB447629E1636700001AB0 /* SwiftyJSON */; };
 		9EDB447929E1D17D00001AB0 /* PostAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDB447829E1D17D00001AB0 /* PostAPI.swift */; };
@@ -137,6 +138,7 @@
 		9EC93A2829E8179B0026A3C0 /* Root_Mo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root_Mo.swift; sourceTree = "<group>"; };
 		9EC93A2A29E84A2C0026A3C0 /* re_post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = re_post.swift; sourceTree = "<group>"; };
 		9EC93A2C29E84A460026A3C0 /* re_save.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = re_save.swift; sourceTree = "<group>"; };
+		9EC986E42A021F71002BFE96 /* Root_WriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root_WriteButton.swift; sourceTree = "<group>"; };
 		9EDB447829E1D17D00001AB0 /* PostAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostAPI.swift; sourceTree = SOURCE_ROOT; };
 		9EDB447C29E29D6400001AB0 /* sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sample.swift; sourceTree = "<group>"; };
 		9EDB448429E565DA00001AB0 /* deleteCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deleteCheck.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				256CBF4829BEF83C0081AC2B /* Root_Write_noG.swift */,
 				257589B829BEFBC500A604A6 /* Major_Box.swift */,
 				9EC93A2829E8179B0026A3C0 /* Root_Mo.swift */,
+				9EC986E42A021F71002BFE96 /* Root_WriteButton.swift */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -609,6 +612,7 @@
 				9E1EED0E29E6701400E5477E /* write_button.swift in Sources */,
 				25828C3229BDB69D0077FBDB /* CurriculumView.swift in Sources */,
 				2528F4A629BF7F0C00A148D2 /* CurriculumJavaView.swift in Sources */,
+				9EC986E52A021F71002BFE96 /* Root_WriteButton.swift in Sources */,
 				25828C2E29BDB5EC0077FBDB /* FindView.swift in Sources */,
 				9EDB448529E565DA00001AB0 /* deleteCheck.swift in Sources */,
 				256CBF4929BEF83C0081AC2B /* Root_Write_noG.swift in Sources */,

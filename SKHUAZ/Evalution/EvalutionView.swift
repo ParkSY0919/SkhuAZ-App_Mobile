@@ -89,7 +89,7 @@ struct EvaluationView: View {
         if searchText.isEmpty {
             return lectures
         } else {
-            return lectures.filter { $0.department.contains(searchText) || $0.lectureName.contains(searchText) || $0.nickname.contains(searchText) }
+            return lectures.filter { $0.department.contains(searchText) || $0.lectureName.contains(searchText) || $0.nickname.contains(searchText) || $0.prfsName.contains(searchText) }
         }
     }
     @State private var isDataFetched = false
